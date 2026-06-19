@@ -137,7 +137,12 @@ export default function ExamPage() {
             key={opt}
             value={opt}
             selected={answers[current] === opt}
-            onClick={() => selectAnswer(opt)}
+            onClick={() => {
+              selectAnswer(opt);
+              if (current < questions.length - 1) {
+                setCurrent((c: number) => c + 1);
+              }
+            }}
           />
         ))}
       </div>
