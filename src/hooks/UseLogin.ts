@@ -11,8 +11,6 @@ export function useLogin() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const navigate = useNavigate();
-
-  // LOAD session saat pertama buka app
   useEffect(() => {
     const saved = localStorage.getItem(AUTH_KEY);
 

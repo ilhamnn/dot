@@ -24,7 +24,6 @@ export function useExam() {
   const fetched = useRef(false);
 
   useEffect(() => {
-    // 🔥 kalau sudah ada soal di localStorage → STOP FETCH
     if (questions.length > 0) return;
     if (fetched.current) return;
 

@@ -98,7 +98,7 @@ export default function ExamPage() {
     );
   }
 
-  if (!question) return <div>Loading question...</div>;
+  if (!question) return <div>Tunggu...</div>;
 
   return (
     <div className="mx-auto max-w-4xl p-6 space-y-4">
