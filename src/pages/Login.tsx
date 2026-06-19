@@ -20,7 +20,7 @@ export default function LoginPage() {
 
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
-            <label className="mb-1 block text-sm font-medium">Email</label>
+            <label className="mb-1 block text-sm font-medium">Username</label>
             <input
               value={username}
               onChange={(e) => setUsername(e.target.value)}
